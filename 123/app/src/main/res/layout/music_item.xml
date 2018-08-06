@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relatives">
+
+    <ImageView
+        android:id="@+id/item_mymusic_pic"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        >
+
+        <TextView
+            android:id="@+id/item_mymusic_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="歌曲名"
+            android:layout_marginTop="5dp"
+            android:textColor="#0d0c0c"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/item_mymusic_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_mymusic_song"
+            android:text="歌手"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#0d0c0c"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/item_mymusic_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_mymusic_song"
+            android:layout_marginLeft="15dp"
+            android:textColor="#0d0c0c"
+            android:layout_toRightOf="@+id/item_mymusic_singer"
+            android:text="时间"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/my_favorite_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="260dp"
+            android:src="@drawable/my_favorite_for_each"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

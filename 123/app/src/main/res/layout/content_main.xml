@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/main_textview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="我的音乐" />
+    <ListView
+        android:id="@+id/main_listview"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/main_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <TableRow
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:background="#008577">
+        <TextView
+            android:id="@+id/song_in_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#F0FFF0"
+            android:textSize="25dp"
+            android:text="我的音乐"/>
+    </TableRow>
+</RelativeLayout>
